@@ -22,4 +22,5 @@ class AnswerEvent(Event):
 class SubQuestionQueryEngine(Workflow):
 
     @step(pass_context=True)
-    def 
+    def query(self, ctx: Context, ev: StartEvent) -> QueryEvent:
+        
